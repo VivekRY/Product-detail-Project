@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">StoptoShop</a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." />
+        <button>Search</button>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Wishlist</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count">0</span>
+      </div>
+    </header>
+
+    <div class="product-page">
+      <div class="carousel">
+        <div class="loader-container">
+          <div class="loader"></div>
+          <img id="main-image" class="main-image" src="" alt="Product Image" />
+        </div>
+        <div class="thumbnails"></div>
+        <button id="prev" class="carousel-arrow">&#10094;</button>
+        <button id="next" class="carousel-arrow">&#10095;</button>
+      </div>
+
+      
+      <div class="product-info">
+        <div class="wishlist">
+          <i class="fas fa-heart wishlist-icon"></i>
+        </div>
+        <h1>Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</h1>
+        <div class="rating">
+          <span>⭐⭐⭐⭐⭐</span>
+          <span>(120 Reviews)</span>
+        </div>
+        <div class="price">
+          <span>₹149.99</span>
+          <span class="discount-price">₹199.99</span>
+          <!-- Discount Price -->
+        </div>
+        
+        <div class="offers">
+          <p>
+            <strong>Special Offer:</strong> Get 10% off with code
+            <strong>SALE10</strong>
+          </p>
+          <p>Free shipping on orders over $50!</p>
+        </div>
+
+        <div class="color-variants">
+          <label for="color">Color:</label>
+          <div class="colors">
+            <span
+              class="color-option"
+              style="background-color: red"
+              data-color="red"
+            ></span>
+            <span
+              class="color-option"
+              style="background-color: blue"
+              data-color="blue"
+            ></span>
+            <span
+              class="color-option"
+              style="background-color: green"
+              data-color="green"
+            ></span>
+          </div>
+        </div>
+
+        <div class="quantity-selector">
+          <button id="decrease" class="quantity-button">-</button>
+          <input
+            id="quantity"
+            class="quantity-input"
+            type="number"
+            value="1"
+            min="1"
+          />
+          <button id="increase" class="quantity-button">+</button>
+        </div>
+        <div class="product-details">
+          <h2>About this item</h2>
+          <ul>
+            <li>All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.</li>
+            <li>Powerful Performance – Take on everything from professional-quality editing to action-packed gaming with ease</li>
+            <li>Stunning Display – With a 13.3-inch/33.74 cm Retina display, images come alive with new levels of realism</li>
+            <li>Superfast Memory – 8GB of unified memory makes your entire system speedy and responsive</li>
+          </ul>
+        </div>
+        <button id="add-to-cart" class="add-to-cart-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        © 2025 MyStore | <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
